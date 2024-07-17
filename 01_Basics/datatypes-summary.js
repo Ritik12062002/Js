@@ -36,10 +36,33 @@ let obj ={
 
 
 const myFunction = function(){
-    console.log("Hello world");
+    // console.log("Hello world");
 }
 
 
-console.log(typeof obj);
+// console.log(typeof obj);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(primitive)   heap(non primitive)
+ 
+let myName ="ritiksharma"
+let anotherName ="ritik"
+anotherName="ritikkumar"
+// console.log(myName);
+// console.log(anotherName);
+
+let userOne ={
+    email:"user@google.com",
+    upi:"user@ybl"
+
+}
+let userTwo = userOne
+userTwo.upi="user@ibl"
+
+console.log(userOne.upi);
+console.log(userTwo.upi);

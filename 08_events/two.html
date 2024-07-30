@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout and clearTimeout </title>
+        <style>
+            h1{
+                color: black;
+            }
+            #id{
+                color: black;
+            }
+        </style>
+</head>
+<body>
+    <h1>Learing Javasrcipt</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("ritik");
+    // },2000)
+
+
+    // const sayRitik =function(){
+    //     console.log("ritik");
+    // }
+
+    // setTimeout(sayRitik,2000)
+
+    // document.querySelector('h1').innerHTML="best JS series"
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML="best JS series"
+    }
+
+    const changeMe= setTimeout(changeText,2000)
+
+
+    //clearTimeout
+
+      document.querySelector('#stop').addEventListener('click',function(){
+          clearTimeout(changeMe)
+          console.log("stopped");
+      })
+
+</script>
+</html>

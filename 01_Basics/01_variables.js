@@ -1,7 +1,7 @@
 const accountId =14453
 let accountEmail="ritik13@gmail.com"
 var accountPassword ="123345"
-accountCity ="Delhi"
+accountCity ="Nodia"
 let accountDate;
 
 // accountId=2  not allowed
